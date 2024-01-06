@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class Perfect
+{
+    public static void main(String[]args)
+    {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter a 2 numbers");
+        int start = s.nextInt();
+        int end = s.nextInt();
+        for(int j=start;j<=end;j++)
+        {
+        int temp=j,i=1,sum=0;
+        while(i<j)
+        {
+            if(j%i==0)
+            sum=sum+i;
+            i++;
+        }
+        if(sum==temp)
+        System.out.println(temp);
+    }
+}
+}
+
+
+within 1 to 100 range perfect numbers are  6,28.
