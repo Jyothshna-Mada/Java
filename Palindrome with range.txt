@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Palindrome
+{
+    public static void main(String[]args)
+    {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter two numbers");
+        int start = s.nextInt();
+        int end = s.nextInt();
+        for(int i=start;i<=end;i++)
+        {
+            int rev=0,num=i;
+            while(num>0)
+            {
+                int rem=num%10;
+                rev=rev*10+rem;
+                num=num/10;
+            }
+            if(rev==i)
+            System.out.println(i);
+        }
+    }
+}
