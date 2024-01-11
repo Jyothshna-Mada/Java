@@ -1,0 +1,15 @@
+class Perfect
+{
+    public static void main(String[]args)
+    {
+        int num=28,i=1,sum=0;
+        while(i<=num/2)
+        {
+            if(num%i==0)
+            sum=sum+i;
+            i++;
+        }
+        if(num==sum)
+        System.out.println(num+ " is a perfect number");
+    }
+}
