@@ -1,0 +1,29 @@
+abstract class A
+{
+    public abstract void m1();
+    abstract void m2();
+}
+abstract class B extends A
+{
+    public void m1()
+    {
+        System.out.println("m1() of B");
+    }
+}
+class C extends B
+{
+    void m2()
+    {
+        System.out.println("m2() 0f C");
+    }
+}
+class Test
+{
+    public static void main(String[]args)
+    {
+        System.out.println("Hi");
+        A a1 = new C();
+        a1.m1();
+        a1.m2();
+    }
+}
