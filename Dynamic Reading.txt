@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class DynamicFetch
+{
+    public static void main(String[]args)
+    {
+        System.out.println("Enter values");
+        Scanner s = new Scanner(System.in);
+        byte a = s.nextByte();
+        short b = s.nextShort();
+        int c = s.nextInt();
+        long d = s.nextLong();
+        double e = s.nextDouble();
+        float f = s.nextFloat();
+        boolean g = s.nextBoolean();
+        char h = s.next().charAt(0);
+        String i = s.next();
+        String j = s.nextLine();
+        
+        System.out.println("A: "+a);
+         System.out.println("B: "+b);
+          System.out.println("C: "+c);
+           System.out.println("D: "+d);
+            System.out.println("E: "+e);
+             System.out.println("F: "+f);
+              System.out.println("G: "+g);
+               System.out.println("H: "+h);
+               System.out.println("I: "+i);
+               System.out.println("J: "+j);
+    }
+}
