@@ -1,0 +1,23 @@
+class Automorphic
+{
+    public static void main(String[]args)
+    {
+        int num=76,temp=num;
+        int sqrnum=num*num;
+        int len=0;
+        while(temp>0)
+        {
+            temp=temp/10;
+            len++;
+        }
+        int pow=1;
+        for(int i=1;i<=len;i++)
+        {
+            pow = pow*10;
+        }
+        int result = sqrnum%pow;
+        if(result==num)
+        System.out.println(num+ " is a automorphic number");
+        else System.out.println(num+ " is not a automorphic number");
+    }
+}
