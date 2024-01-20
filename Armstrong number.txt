@@ -1,0 +1,27 @@
+class Armstrong
+{
+    public static void main(String[]args)
+    {
+        int num=153,temp=num,num1=num;
+        int len=0,sum=0;
+        while(temp>0)
+        {
+            temp=temp/10;
+            len++;
+        }
+        while(num1>0)
+        {
+            int rem= num1%10;
+            int pow=1;
+            for(int i=1;i<=len;i++)
+            {
+               pow=pow*rem;
+            }
+            sum=sum+pow;
+            num1=num1/10;
+        }
+        if(num==sum)
+        System.out.println(num+" is a armstrong number");
+        else System.out.println(num+ " is not a automorphic number");
+    }
+}
