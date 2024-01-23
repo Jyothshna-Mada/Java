@@ -1,0 +1,43 @@
+class A
+{
+    int a=10;
+    int total=0;
+    void funA()
+    {
+        System.out.println("Value of a in class A :" + a);
+         System.out.println("Total value in class A :" +total);
+    }
+}
+class B extends A
+{
+    int b=20;
+    void funB()
+    {
+        total=a+b;
+         System.out.println("Value of a in class B :" +a);
+          System.out.println("Value of b in class B :" +b);
+           System.out.println("Total value in class B :" +total);
+    }
+}
+class C extends B
+{
+    int c=30;
+    void funC()
+    {
+    total=a+b+c;
+     System.out.println("Value of a in class C :" +a);
+      System.out.println("Value of b in class C :" +b);
+       System.out.println("Value of c in class C :" +c);
+        System.out.println("Total value in class C :" +total);
+    }
+}
+class Multilevel
+{
+    public static void main (String[]args)
+    {
+        C n = new C();
+        n.funA();
+        n.funB();
+        n.funC();
+    }
+}
