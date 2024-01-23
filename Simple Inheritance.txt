@@ -1,0 +1,24 @@
+class Superclass
+{
+    int a=10;
+    void display_super()
+    {
+        System.out.println("Value of a in super class :" + a);
+    }
+}
+class Subclass extends Superclass
+{
+    void display_sub()
+    {
+        System.out.println("Value of a in sub class :" + a);
+    }
+}
+class Simple
+{
+    public static void main(String[]args)
+    {
+       Subclass s = new Subclass();
+       s.display_sub();
+       s.display_super();
+    }
+}
