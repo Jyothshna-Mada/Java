@@ -1,0 +1,32 @@
+class A//Super class
+{
+    int i = 10;
+    int j = 20;
+}
+class B extends A  //Sub class of A
+{
+    void add()
+    {
+        int sum = i+j;
+        System.out.println("Sum is :" + sum);
+    }
+}
+class C extends A  //sub class of A
+{
+    void mul()
+    {
+        int product= i*j;
+        System.out.println("Product is :" + product);
+    }
+}
+class Hierarchy
+{
+    public static void main(String[]args)
+    {
+        B b1 = new B();
+        C c1 = new C();
+        b1.add();
+        
+        c1.mul();
+    }
+}
