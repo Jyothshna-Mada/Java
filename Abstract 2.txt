@@ -1,0 +1,26 @@
+abstract class A
+{
+    final void m1()
+    {
+        System.out.println("Welcome");
+    }
+    abstract void m2();
+}
+class B extends A
+{
+    @override  //Predefined Annotation
+    void m2()
+    {
+        System.out.println("user");
+    }
+}
+class Test
+{
+    public static void main(String[]args)
+    {
+        A a1 = new B();// Upcasting
+        a1.m1();
+        a1.m2();
+      A a2 = new A();//CTE
+    }
+}
