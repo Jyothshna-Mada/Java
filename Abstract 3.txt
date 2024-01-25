@@ -1,0 +1,28 @@
+abstract class A
+{
+    final void m1()
+    {
+        System.out.println("Welcome");
+    }
+    abstract final void m2(); //Illegal combination of modifiers
+    abstract private void m3(); //Illegal combination of modifiers
+    abstract static void m4(); //Illegal combination of modifiers
+}
+ class B extends A
+{
+   // @override  //Predefined Annotation
+    void m2()  //CTE cant override final method
+    {
+        System.out.println("user");
+    }
+}
+
+class Test
+{
+    public static void main(String[]args)
+    {
+        A a1 = new B();// Upcasting
+        a1.m1();
+        a1.m2();
+    }
+}
