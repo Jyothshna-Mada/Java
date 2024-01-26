@@ -1,0 +1,42 @@
+class Bike
+{
+    
+}
+class Pulsar extends Bike
+{
+    
+}
+class A
+{
+    public void service(Bike b)
+    {
+        System.out.println("m1() of A");
+    }
+    public void service(Pulsar p)
+    {
+        System.out.println("m2() of A");
+    }
+}
+class B extends A
+{
+    public void service(Bike b)
+    {
+ System.out.println("m1() of B");
+    }
+    public void service(Pulsar p)
+    {
+        System.out.println("m2() of B");
+    }
+}
+class Test
+{
+    public static void main(String[]args)
+    {
+        Bike b;
+        Pulsar pulsar = new Pulsar();
+        b = pulsar;
+        A a1 = new B();
+        a1.service(b);
+        a1.service(pulsar);
+    }
+}
