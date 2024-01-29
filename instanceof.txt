@@ -1,0 +1,52 @@
+class A
+{
+    void m1()
+    {
+        System.out.println("A class");
+    }
+}
+class B extends A
+{
+   void m1()
+   {
+        System.out.println("B class");
+   }
+}
+class C extends A
+{
+    void m1()
+    {
+        System.out.println("C class");
+    }
+}
+class Demo
+{
+    public static void main(String[]args)
+    {
+        Object obj = new Object();
+         System.out.println("Instance for object class is created");
+        System.out.println(obj instanceof Object);
+         System.out.println(obj instanceof A);
+         System.out.println(obj instanceof B);
+         Object ob = new A();
+          System.out.println("Instance for A created and stored in object class");
+           System.out.println(ob instanceof Object);
+            System.out.println(ob instanceof A);
+             System.out.println(ob instanceof B);
+             A a = new A();
+              System.out.println("Instance for A class is created");
+               System.out.println(a instanceof Object);
+                System.out.println(a instanceof A);
+                 System.out.println(a instanceof B);
+                 B b= new B();
+                  System.out.println("Instance for B class is created");
+                   System.out.println(b instanceof Object);
+                    System.out.println(b instanceof A);
+                     System.out.println(b instanceof B);
+        A a1 = new B();
+         System.out.println("Instance for B created and stored in A");
+        System.out.println(a1 instanceof A);
+         System.out.println(a1 instanceof B);
+          System.out.println(a1 instanceof Object);
+    }
+}

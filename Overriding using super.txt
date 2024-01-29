@@ -1,0 +1,25 @@
+class Bank
+{
+    void rateofIntrest()
+    {
+        int i= 10;
+        System.out.println("Rate of Intrest is : "+i);
+    }
+}
+class Sbi extends Bank
+{
+    void rateofIntrest()
+    {
+        super.rateofIntrest();
+        int i=15;
+        System.out.println("Rate of Intrest of SBI bank is : "+i);
+    }
+}
+class Demo
+{
+    public static void main(String[]args)
+    {
+        Sbi s1 = new Sbi();
+        s1.rateofIntrest();
+    }
+}
