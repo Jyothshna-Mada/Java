@@ -1,0 +1,22 @@
+class Father
+{
+    void vehicle()
+    {
+        System.out.println("Old version tvs vehicle");
+    }
+}
+class Son extends Father
+{
+    void vehicle()
+    {
+        System.out.println("New version of apache vehicle");
+    }
+}
+class Demo
+{
+    public static void main(String[]args)
+    {
+        Son s= new Son();
+        s.vehicle();
+    }
+}
