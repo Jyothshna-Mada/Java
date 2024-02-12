@@ -1,0 +1,16 @@
+class Test1
+{
+    public static void main(String[]args)
+    {
+        String a = "I am going to learn java";
+        char[] c = a.toCharArray();
+        String rev="";
+        for(int i=c.length-1;i>=0;i--)
+        {
+          rev+=c[i];  
+        }
+        System.out.println("Original String is: "+String.valueOf(c));
+        System.out.println("Reverse of a string is: "+rev);
+        System.out.println(a);
+    }
+}
